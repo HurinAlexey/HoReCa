@@ -7,9 +7,16 @@ $('#search-toggle').click(() => {
 //Popover
 $('.product-info .block-item').popover();
 
+$('.product-info .block-item').mouseover(function() {
+    $(this).popover('show');
+});
+
+$('.product-info .block-item').mouseout(function() {
+    $(this).popover('hide');
+});
+
 $(document).click((e) => {
     $('.product-info .block-item').popover('hide');
-    $(e.target).closest('.product-info .block-item').popover('show');
 });
 
 
