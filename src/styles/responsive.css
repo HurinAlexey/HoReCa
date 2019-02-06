@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px;
+    width: 94%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

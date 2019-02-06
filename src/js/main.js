@@ -5,18 +5,19 @@ $('#search-toggle').click(() => {
 
 
 //Popover
-$('.product-info .block-item').popover();
+let popoverSelectors = $('.product-info .block-item, .price .wholesale .info');
+$(popoverSelectors).popover();
 
-$('.product-info .block-item').mouseover(function() {
+$(popoverSelectors).mouseover(function() {
     $(this).popover('show');
 });
 
-$('.product-info .block-item').mouseout(function() {
+$(popoverSelectors).mouseout(function() {
     $(this).popover('hide');
 });
 
 $(document).click((e) => {
-    $('.product-info .block-item').popover('hide');
+    $(popoverSelectors).popover('hide');
 });
 
 
@@ -71,6 +72,20 @@ $('.select-grid li').click(function() {
     $(this).closest('.select-grid').slideUp(100);
 });
 
+$(document).click((e) => {
+    if($(e.target).closest('#product-type').length === 0) {
+        $('#product-type .select-list').slideUp(100);
+        $('#product-type .btn-select').removeClass('active');
+    }
+});
+
+$(document).click((e) => {
+    if($(e.target).closest('#product-color').length === 0) {
+        $('#product-color .select-grid').slideUp(100);
+        $('#product-color .btn-select').removeClass('active');
+    }
+});
+
 
 //Quantity input
 $('.quantity .btn-plus').click(function() {
@@ -90,4 +105,38 @@ $('.quantity input').blur(function() {
     if($(this).val() < 1) {
         $(this).val(1);
     }
+});
+
+
+//Price slider
+let priceSlider = document.getElementById('price-slider');
+
+if($(priceSlider).length) {
+    noUiSlider.create(priceSlider, {
+        start: [+$(priceSlider).attr('data-min'), +$(priceSlider).attr('data-max')],
+        connect: true,
+        step: 1,
+        range: {
+            'min': +$(priceSlider).attr('data-min'),
+            'max': +$(priceSlider).attr('data-max')
+        }
+    });
+
+    let nodes = [
+        document.getElementById('lower-price'),
+        document.getElementById('upper-price')
+    ];
+
+    // Display the slider value and how far the handle moved
+    // from the left edge of the slider.
+    priceSlider.noUiSlider.on('update', function (values, handle) {
+        nodes[handle].innerHTML = Math.floor(values[handle]) + ' грн';
+    });
+}
+
+
+//Modal product carousel show current index
+$('#modal-product-carousel').on('slide.bs.carousel', function (e) {
+    let currentIndex = $(e.relatedTarget).index() + 1;
+    $(this).closest('#modal-carousel').find('.current-slide .slide-index').text(currentIndex);
 });

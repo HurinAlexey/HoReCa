@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/nouislider.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/responsive.css">
 
@@ -95,6 +96,288 @@
                 </ol>
             </nav>
 
+            <div class="page-header">
+                <h2>Стулья для кафе Paged (Материал каркаса: Дерево)</h2>
+                <p>Успех ресторанного бизнеса зависит от нескольких важных составляющих: интерьер, еда, сервис и
+                    справедливая цена. И основная задача ресторатора – поддерживать баланс этих факторов. Ведь
+                    согласиесь, если в вашем ресторане стильный и уютный интерьер, отличная еда и отличный сервис –
+                    гости обязательно к вам вернуться. Если хорошая еда и сервис, но при этом скучный и неуютный
+                    интерьер – возможно вернуться. Хороший дизайн, качественный сервис, но ужасная еда – однозначно
+                    не вернуться! </p>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="filter">
+                        <span class="result">27 моделей</span>
+
+                        <div class="active-filters">
+                            <a href="#" class="filter-item">
+                                <button class="btn remove"><span aria-hidden="true">&times;</span></button>
+                                <span>Paged</span>
+                            </a>
+                            <a href="#" class="filter-item">
+                                <button class="btn remove"><span aria-hidden="true">&times;</span></button>
+                                <span>Дерево</span>
+                            </a>
+                            <a href="#" class="filter-item">
+                                <button class="btn remove"><span aria-hidden="true">&times;</span></button>
+                                <span>Цена от 1800 грн до 10 000 грн</span>
+                            </a>
+                        </div>
+
+                        <div id="filter-list">
+
+                            <div class="card">
+                                <div class="card-header" id="option-1">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-1" aria-expanded="false" aria-controls="option-value-1">
+                                        <span class="option-name">Производители</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-1" class="collapse multi-collapse show" aria-labelledby="option-1">
+                                    <div class="card-body">
+                                        <div class="options-list">
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="value-paged">
+                                                <label class="custom-control-label" for="value-paged">Paged</label>
+                                            </div>
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="value-scab-design">
+                                                <label class="custom-control-label" for="value-scab-design">Scab Design</label>
+                                            </div>
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="value-nardi">
+                                                <label class="custom-control-label" for="value-nardi">Nardi</label>
+                                            </div>
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="value-midj">
+                                                <label class="custom-control-label" for="value-midj">Midj</label>
+                                            </div>
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="value-fenabel">
+                                                <label class="custom-control-label" for="value-fenabel">Fenabel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="option-2">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-2" aria-expanded="false" aria-controls="option-value-2">
+                                        <span class="option-name">Материал каркаса</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-2" class="collapse multi-collapse show" aria-labelledby="option-2">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, non?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="option-3">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-3" aria-expanded="false" aria-controls="option-value-3">
+                                        <span class="option-name">Тип стульев</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-3" class="collapse multi-collapse show" aria-labelledby="option-3">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, est.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="option-4">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-4" aria-expanded="false" aria-controls="option-value-4">
+                                        <span class="option-name">Страна производства</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-4" class="collapse multi-collapse show" aria-labelledby="option-4">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, veritatis.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="option-price">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-price" aria-expanded="false" aria-controls="option-value-price">
+                                        <span class="option-name">Цена</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-price" class="collapse multi-collapse show" aria-labelledby="option-price">
+                                    <div class="card-body">
+                                        <div class="price-values">
+                                            <div id="lower-price"></div>
+                                            <div id="upper-price"></div>
+                                        </div>
+                                        <div id="price-slider" data-min="0" data-max="10000"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="sort">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#sort-list" aria-expanded="false" aria-controls="sort-list">
+                            Сортировать
+                        </button>
+                        <div class="collapse" id="sort-list">
+                            <div class="card card-body">
+                                <ul>
+                                    <li><a href="#" data-sort="popular" class="active">Популярные</a></li>
+                                    <li><a href="#" data-sort="price-down">Цена (от высокой к низкой)</a></li>
+                                    <li><a href="#" data-sort="price-up">Цена (от низкой к высокой)</a></li>
+                                    <li><a href="#" data-sort="sale">Товары со скидкой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+
+                        <a href="#" class="product-card">
+                            <span class="availability">В наличии</span>
+                            <span class="discount">-10%</span>
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-1.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул A-1845</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                                <span class="old">4600 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-2.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="wholesale">
+                                    3680 грн
+                                    <span class="info" data-container="body" data-toggle="popover" data-placement="top" data-content="Цена при покупке от 25 штук">?</span>
+                                </span>
+                                <span class="current">4600 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-3.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-4.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-5.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-3.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-4.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-5.jpg" alt="Стул">
+                            </div>
+                            <h4>Стул Paged A-0043</h4>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="prev-page"><img src="../images/pagination-prev.png" alt="prev page"></a>
+                        <span class="active">1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>...</span>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#" class="next-page"><img src="../images/pagination-next.png" alt="next page"></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="page-footer">
+                <h3>Стулья для кафе и ресторана</h3>
+                <p>Успех ресторанного бизнеса зависит от нескольких важных составляющих: интерьер, еда, сервис и
+                    справедливая цена. И основная задача ресторатора – поддерживать баланс этих факторов. Ведь
+                    согласитесь, если в вашем ресторане стильный и уютный интерьер, отличная еда и отличный сервис –
+                    гости обязательно к вам вернуться. Если хорошая еда и сервис, но при этом скучный и неуютный
+                    интерьер – возможно вернуться. Хороший дизайн, качественный сервис, но ужасная еда – однозначно
+                    не вернуться!</p>
+                <p>И если на некоторые составляющие можно повлиять и изменить в процессе работы, то исправить
+                    архитектуру и дизайн заведения будет сложно и финансово затратно. Это же касается и выбора мебели.</p>
+                <p>Наш ассортимент стульев для кафе включает в себя разнообразный выбор моделей, в зависимости от типа
+                    заведения и ваших потребностей. С сотнями моделей на выбор, вы обязательно сможете выбрать стулья,
+                    которые будут дополнять основную тему вашего заведения. В нашем предложении только профессиональная
+                    мебель для сегмента HoReCa, это гарантирует долгий срок службы изделий без изменения ее внешнего вида.</p>
+                <p>Наиболее привлекательно и гармонично в интерьере кафе или ресторана смотрятся стулья из натурального
+                    дерева. Стильные и уютные, с красивым декором или резьбой, они подчеркнут изысканный вкус владельца.</p>
+
+                <h3>Стулья для бара и паба</h3>
+                <p>В атмосферу классических ирландских пабов идеально впишутся твердые стулья из гнутого дерева, так же
+                    называемые "венскими". Для баров их владельцы часто заказывают презентабельные, но в то же время
+                    практичные кожаные стулья на деревянном каркасе. Вы можете выбрать модели как со спинкой, так и без,
+                    квадратной или округлой формы. Расцветки подбираются в зависимости от концепции заведения.</p>
+            </div>
+
         </div>
     </div>
 </main>
@@ -159,6 +442,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../js/nouislider.min.js"></script>
 
 <script src="../js/main.js"></script>
 </body>
