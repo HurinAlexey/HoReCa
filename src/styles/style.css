@@ -637,6 +637,9 @@ a {
   object-fit: cover;
   transition: all 0.3s;
 }
+.collection-card .thumbnail:hover img {
+  transform: scale(1.1);
+}
 .collection-card h4 {
   position: absolute;
   left: 0;
@@ -803,6 +806,10 @@ a {
 .page-footer p {
   margin: 0;
 }
+.filter-wrap {
+  width: 300px;
+  max-width: 300px;
+}
 .filter .result {
   display: block;
   font-size: 16px;
@@ -926,6 +933,10 @@ a {
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #999;
+}
+.filter #filter-list #price-slider .noUi-handle::before,
+.filter #filter-list #price-slider .noUi-handle::after {
+  display: none;
 }
 .filter #filter-list #price-slider .noUi-handle:focus {
   outline: none;
@@ -1807,6 +1818,9 @@ a {
 .portfolio-page .portfolio-card .location {
   font-size: 16px;
 }
+.designer-item {
+  margin-bottom: 50px;
+}
 .designer-item .designer-card {
   display: flex;
 }
@@ -1854,12 +1868,23 @@ a {
   width: auto;
   margin-right: 10px;
 }
-.designer-item .gallery {
+.designer-item .last-works {
   display: flex;
   justify-content: space-between;
 }
-.designer-item .gallery img {
+.designer-item .last-works .work-item {
+  display: block;
   width: calc(100% / 3 - 10px);
   height: 160px;
+  overflow: hidden;
+}
+.designer-item .last-works .work-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.designer-item .last-works .work-item:hover img {
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
