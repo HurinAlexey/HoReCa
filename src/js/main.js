@@ -91,6 +91,10 @@ $(document).click((e) => {
 $('.quantity .btn-plus').click(function() {
     let input = $(this).closest('.quantity').find('input');
     $(input).val(+$(input).val() + 1);
+
+    if($(input).closest('.order-list').length !== 0) {
+        calculateOrderCost(input, $(input).val())
+    }
 });
 
 $('.quantity .btn-minus').click(function() {
@@ -98,6 +102,10 @@ $('.quantity .btn-minus').click(function() {
 
     if($(input).val() > 1) {
         $(input).val(+$(input).val() - 1);
+    }
+
+    if($(input).closest('.order-list').length !== 0) {
+        calculateOrderCost(input, $(input).val())
     }
 });
 
@@ -108,6 +116,10 @@ $('.quantity input').blur(function() {
     if($(this).val() < 1) {
         $(this).val(1);
     }
+
+    if($(this).closest('.order-list').length !== 0) {
+        calculateOrderCost(this, $(this).val())
+    }
 });
 
 $('.quantity input').keypress(function(key) {
@@ -116,6 +128,33 @@ $('.quantity input').keypress(function(key) {
 
 $('.quantity input').on("cut copy paste",function(e) {
     e.preventDefault();
+});
+
+function calculateOrderCost(elem, quantity) {
+    let price = $(elem).closest('tr').find('.product-price').text();
+    let sum = +price * +quantity;
+    $(elem).closest('tr').find('.sum').text(sum);
+
+    calculateTotalCost(elem);
+}
+
+function calculateTotalCost(elem) {
+    let totalSum = 0;
+    $(elem).closest('.order-list').find('.sum').each(function() {
+        totalSum += +$(this).text();
+    });
+
+    $(elem).closest('.order-list').find('.total-sum').text(totalSum + ' грн');
+}
+
+$(document).ready(function() {
+    if($('.order-list').length !== 0) {
+        $('.order-list .quantity input').each(function() {
+            calculateOrderCost(this, $(this).val());
+        });
+
+        calculateTotalCost($('.order-list'));
+    }
 });
 
 
@@ -147,9 +186,9 @@ if($(priceSlider).length) {
 
 
 //Modal product carousel show current index
-$('#modal-product-carousel').on('slide.bs.carousel', function (e) {
+$('#modal-carousel').on('slide.bs.carousel', function (e) {
     let currentIndex = $(e.relatedTarget).index() + 1;
-    $(this).closest('#modal-carousel').find('.current-slide .slide-index').text(currentIndex);
+    $(this).closest('#modal-carousel-wrapper').find('.current-slide .slide-index').text(currentIndex);
 
     $(this).find('.zoom').removeClass('active');
     $(this).closest('.modal-content').find('.slider-footer').fadeIn(0);
@@ -170,10 +209,10 @@ $('#sort-list').on('hidden.bs.collapse', function () {
 $('.zoom').click(function() {
     $(this).toggleClass('active');
     if($(this).hasClass('active')) {
-        $(this).closest('#modal-product-carousel').carousel('pause');
+        $(this).closest('#modal-carousel').carousel('pause');
         $(this).closest('.modal-content').find('.slider-footer').fadeOut(0);
     } else {
-        $(this).closest('#modal-product-carousel').carousel('cycle');
+        $(this).closest('#modal-carousel').carousel('cycle');
         $(this).closest('.modal-content').find('.slider-footer').fadeIn(0);
     }
 });
@@ -200,5 +239,46 @@ $('#new-products-carousel').owlCarousel({
             items: 5,
             slideBy: 5
         }
+    }
+});
+
+
+// Disabling form submissions if there are invalid fields
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        let validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+
+// Change radio input
+$('.form-check-input').change(function() {
+    let radioInputs = $(this).closest('.radio-group').find('.form-check-input');
+    $(radioInputs).each(function() {
+        if (this.checked) {
+            $(this).attr('checked', true)
+        } else {
+            $(this).attr('checked', false)
+        }
+    });
+});
+
+
+// Add class for vertical images in Portfolio single page
+$('#gallery .gallery-item, .post-page .post-content img').each(function() {
+    if ($(this).width() < $(this).height()) {
+        $(this).addClass('vertical-image');
     }
 });

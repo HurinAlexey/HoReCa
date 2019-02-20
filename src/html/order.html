@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HoReCa</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+
+</head>
+<body>
+
+<header id="site-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <a href="tel: +38 067 402 50 90" class="phone"><span class="icon">🕿</span> +38 067 402-50-90</a>
+            </div>
+            <div class="col-4 text-center">
+                <a href="/" class="site-logo">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="col-4 text-right">
+                <div class="btns-group">
+                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                    <button class="btn current-lang">UK</button>
+                    <button class="btn">
+                        <img src="../images/icons/favorite.svg" alt="favorites">
+                        <span class="count">21</span>
+                    </button>
+                    <button class="btn">
+                        <img src="../images/icons/basket.svg" alt="basket">
+                        <span class="count">8</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+            </div>
+        </form>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Для кафе</a>
+                    <div class="sub-menu">
+                        <ul class="sub-nav container">
+                            <li class="menu-item"><a href="#">Барные стулья</a></li>
+                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                            <li class="menu-item"><a href="#">Вешалки</a></li>
+                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                            <li class="menu-item"><a href="#">Столы</a></li>
+                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                            <li class="menu-item"><a href="#">Столы</a></li>
+                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main id="content">
+    <div class="order-page">
+        <div class="container">
+
+            <h2>Оформление заказа</h2>
+
+            <div class="row">
+                <div class="col">
+
+                    <table class="order-list">
+                        <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Цена с НДС</th>
+                            <th>Кол-во</th>
+                            <th>Сумма с НДС</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <a href="#" class="thumbnail">
+                                        <img src="../images/kreslo-april-1.jpg" alt="B-1830">
+                                    </a>
+                                    <div class="product-info">
+                                        <a href="#">Кресло B-1830</a>
+                                        <span>Артикуль: PMH0207</span>
+                                        <span>Модель: UPH-1 (категория обивки)</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="product-price">5823</span> грн
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="text" value="1">
+                                    <button class="btn btn-plus">+</button>
+                                    <button class="btn btn-minus">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="sum">0</span> грн
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <a href="#" class="thumbnail">
+                                        <img src="../images/stul-5.jpg" alt="B-1830">
+                                    </a>
+                                    <div class="product-info">
+                                        <a href="#">Кресло B-1830</a>
+                                        <span>Артикуль: PMH0207</span>
+                                        <span>Модель: UPH-2 (категория обивки)</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="product-price">2777</span> грн
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="text" value="1">
+                                    <button class="btn btn-plus">+</button>
+                                    <button class="btn btn-minus">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="sum">0</span> грн
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-right">
+                                    ИТОГО: <span class="total-sum">0</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+                <div class="col">
+                    <form action="/" class="order-form needs-validation">
+
+                        <div class="form-row justify-content-between">
+                            <div class="form-group">
+                                <label for="order-name">Имя*</label>
+                                <input type="text" class="form-control" id="order-name">
+                                <div class="invalid-feedback">
+                                    Это поле обязательное для заполнения
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-company">Название компании</label>
+                                <input type="text" class="form-control" id="order-company">
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-between">
+                            <div class="form-group">
+                                <label for="order-phone">Телефон*</label>
+                                <input type="tel" class="form-control" id="order-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="order-email">E-mail*</label>
+                                <input type="email" class="form-control" id="order-email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="order-message">Комментарий</label>
+                            <textarea class="form-control" id="order-message"></textarea>
+                        </div>
+
+                        <div class="group-title">Способ оплаты</div>
+                        <div class="form-group radio-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment-method" id="cashless-method" value="cashless" checked>
+                                <label class="form-check-label" for="cashless-method">
+                                    Оплата по безналичному расчету (рекомендуем)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment-method" id="cash-method" value="cash">
+                                <label class="form-check-label" for="cash-method">
+                                    Оплата наличными
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment-method" id="card-method" value="card">
+                                <label class="form-check-label" for="card-method">
+                                    Карта Visa или MasterCard (LiqPay)
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn">Оформить заказ</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer id="site-footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-3">
+                <p>Следите за нами в</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../images/Facebook_1.png" alt="facebook">
+                            <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../images/Instagram_2.png" alt="instagram">
+                            <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="../images/YouTube_1.png" alt="youtube">
+                            <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://painterest.com" target="_blank">
+                            <img src="../images/Pinterest_1.png" alt="painterest">
+                            <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-6 text-center">
+                <h4>Подпишитесь на нашу рассылку</h4>
+                <form action="" class="subscribe-form">
+                    <input type="text" placeholder="Укажите ваш e-mail..." pattern="">
+                    <button class="btn" type="submit">Подписаться</button>
+                </form>
+            </div>
+            <div class="col col-3 text-right">
+                <div class="footer-contacts">
+                    <p>ООО “Майер Торг”<br>
+                        02199, Украина<br>
+                        г. Киев, ул. Оросительная, 5В</p>
+
+                    <p>тел.: <a href="tel: +38 067 402-50-90" class="phone-link">+38 067 402-50-90</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../js/nouislider.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

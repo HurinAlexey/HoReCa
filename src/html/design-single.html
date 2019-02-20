@@ -84,50 +84,65 @@
 </header>
 
 <main id="content">
-    <div class="collection-page">
+    <div class="designer-page">
         <div class="container">
 
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item"><a href="#">Офисная мебель</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Офисная мебель Sandiss</li>
+                    <li class="breadcrumb-item"><a href="#">Дизайнеры</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kritskiy Studio</li>
                 </ol>
             </nav>
 
             <div class="row">
-                <div class="col-12">
+                <div class="col col-4">
 
-                    <div class="collection-banner">
-                        <img src="../images/sandiss.jpg" alt="Sandiss">
-                        <h3>Офисная мебель Sandiss</h3>
+                    <div class="designer-photo">
+                        <img src="../images/kritskiy-studio.png" alt="Kritskiy Studio">
+                    </div>
+
+                    <div class="description">
+                        <p>Мастерская KRITSKIY STUDIO во главе с архитектором Константином Критским завершила свой новый
+                            проект – интерьер мясного ресторана. Beef Club – это место с уникальной историей. Современное
+                            заведение находится в самом сердце Харькова. Внутренняя обстановка выдержана в спокойных
+                            оттенках, их разбавляет мебель от Mayer Trade: стильные кресла из бука в яркой обивке,
+                            высокие барные стулья, банкетка и классические модели с цветными сиденьями, которые фабрика
+                            изготавливала под заказ. В качестве декора авторы проекта использовали оригинальные люстры,
+                            светильники и картины, которые очень удачно размещены по всему периметру заведения.</p>
+                        <a href="#" class="read-more">Подробнее</a>
+                    </div>
+
+                    <div class="directions">
+                        <h5>Деятельность</h5>
+                        <ul class="directions-list">
+                            <li><a href="#">Архитектура</a></li>
+                            <li><a href="#">Архитектурный дизайн</a></li>
+                            <li><a href="#">Интерьерный дизайн</a></li>
+                            <li><a href="#">Коммерческий дизайн</a></li>
+                        </ul>
                     </div>
 
                 </div>
-            </div>
+                <div class="col col-8">
 
-            <div class="row">
-                <div class="col-12">
+                    <h2>Kritskiy Studio</h2>
+                    <span class="designer-location"><img src="../images/map-marker.png" alt="location marker" class="icon"> Харьков / Украина</span>
 
-                    <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+                    <ul class="nav nav-tabs" id="designer-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">
-                                Описание
+                                Информация
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="characteristics-tab" data-toggle="tab" href="#characteristics" role="tab" aria-controls="characteristics" aria-selected="false">
-                                Характеристики
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="products-from-collection-tab" data-toggle="tab" href="#products-from-collection" role="tab" aria-controls="products-from-collection" aria-selected="false">
-                                Товары из коллекции
+                            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">
+                                Проекты
                             </a>
                         </li>
                     </ul>
 
-                    <div class="tab-content" id="product-tabs-content">
+                    <div class="tab-content" id="designer-tabs-content">
                         <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                             <p><b>Lorem</b> ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, animi consectetur delectus dolor
                                 dolorem illum libero nostrum optio quo? Asperiores debitis eius exercitationem ipsum maiores
@@ -147,150 +162,30 @@
                             <p>A ad amet animi at beatae delectus deleniti dolore dolorem dolores ducimus eaque error eveniet ex
                                 excepturi incidunt inventore iusto, libero minus, modi non quis quo recusandae totam ullam vel.</p>
                         </div>
-                        <div class="tab-pane fade" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
+                        <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
 
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th colspan="2">Основные характеристики</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Lorem.</td>
-                                    <td>Fuga?</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem.</td>
-                                    <td>Exercitationem!</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem.</td>
-                                    <td>Assumenda.</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem.</td>
-                                    <td>Itaque!</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem.</td>
-                                    <td>Odit.</td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                        <div class="tab-pane fade" id="products-from-collection" role="tabpanel" aria-labelledby="products-from-collection-tab">
-
-                            <div class="product-grid">
-
-                                <a href="#" class="product-card">
-                                    <span class="availability">В наличии</span>
-                                    <span class="discount">-10%</span>
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="portfolio-grid">
+                                <a href="#" class="portfolio-card">
                                     <div class="thumbnail">
-                                        <img src="../images/stul-1.jpg" alt="Стул">
+                                        <img src="../images/beef-club.jpg" alt="Beef Club">
                                     </div>
-                                    <h5>Стул A-1845</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                        <span class="old">4600 грн</span>
-                                    </div>
+                                    <h4>Ресторан BEEF CLUB</h4>
+                                    <span class="location">г. Харьков, Украина</span>
                                 </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <a href="#" class="portfolio-card">
                                     <div class="thumbnail">
-                                        <img src="../images/stul-2.jpg" alt="Стул">
+                                        <img src="../images/winovnik.jpg" alt="Winovnik">
                                     </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
+                                    <h4>Винный бар WINOVNIK</h4>
+                                    <span class="location">г. Днепр, Украина</span>
                                 </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <a href="#" class="portfolio-card">
                                     <div class="thumbnail">
-                                        <img src="../images/stul-3.jpg" alt="Стул">
+                                        <img src="../images/california-republic.jpg" alt="California Republic">
                                     </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
+                                    <h4>California Republic & The Bar Upstairs</h4>
+                                    <span class="location">г. Николаев, Украина</span>
                                 </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-4.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-5.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <span class="availability">В наличии</span>
-                                    <span class="discount">-10%</span>
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-1.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул A-1845</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                        <span class="old">4600 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-2.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-3.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-4.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-card">
-                                    <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                                    <div class="thumbnail">
-                                        <img src="../images/stul-5.jpg" alt="Стул">
-                                    </div>
-                                    <h5>Стул Paged A-0043</h5>
-                                    <div class="price">
-                                        <span class="current">3980 грн</span>
-                                    </div>
-                                </a>
-
                             </div>
 
                         </div>

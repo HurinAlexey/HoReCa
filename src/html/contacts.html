@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HoReCa</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+
+</head>
+<body>
+
+<header id="site-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <a href="tel: +38 067 402 50 90" class="phone"><span class="icon">🕿</span> +38 067 402-50-90</a>
+            </div>
+            <div class="col-4 text-center">
+                <a href="/" class="site-logo">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="col-4 text-right">
+                <div class="btns-group">
+                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                    <button class="btn current-lang">UK</button>
+                    <button class="btn">
+                        <img src="../images/icons/favorite.svg" alt="favorites">
+                        <span class="count">21</span>
+                    </button>
+                    <button class="btn">
+                        <img src="../images/icons/basket.svg" alt="basket">
+                        <span class="count">8</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+            </div>
+        </form>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Для кафе</a>
+                    <div class="sub-menu">
+                        <ul class="sub-nav container">
+                            <li class="menu-item"><a href="#">Барные стулья</a></li>
+                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                            <li class="menu-item"><a href="#">Вешалки</a></li>
+                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                            <li class="menu-item"><a href="#">Столы</a></li>
+                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                            <li class="menu-item"><a href="#">Столы</a></li>
+                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main id="content">
+    <div class="contacts-page">
+        <div class="container">
+
+            <h2>Контакты</h2>
+
+            <div class="row">
+                <div class="col col-6 contacts-info">
+                    <h3>ООО "Майер Торг"</h3>
+                    <div class="info-item">
+                        <div class="icon">
+                            <img src="../images/map_contacts.svg" alt="map marker">
+                        </div>
+                        <p>г. Киев, ул. Оросительная, 5в<br>
+                            Украина, 01032</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <img src="../images/Tel_contacts.svg" alt="phone">
+                        </div>
+                        <a href="tel: +38 067 402 50 90">+38 067 402-50-90</a>
+                        <a href="tel: +38 044 499 99 29">+38 044 499-99-29</a>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <img src="../images/e-mail_contacts.svg" alt="email">
+                        </div>
+                        <a href="mailto: info@horeca.furniture">info@horeca.furniture</a>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <img src="../images/calendar_contacts.svg" alt="map marker">
+                        </div>
+                        <p>ГРАФИК РАБОТЫ:</p>
+                        <p>Пн – Пт: с 10:00 до 18:00</p>
+                    </div>
+                </div>
+                <div class="col col-6">
+                    <form action="/" class="contact-form needs-validation">
+
+                        <div class="form-row justify-content-between">
+                            <div class="form-group">
+                                <label for="contact-name">Имя</label>
+                                <input type="text" class="form-control" id="contact-name">
+                                <div class="invalid-feedback">
+                                    Это поле обязательное для заполнения
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-lastname">Фамилия</label>
+                                <input type="text" class="form-control" id="contact-lastname">
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-between">
+                            <div class="form-group">
+                                <label for="contact-email">E-mail</label>
+                                <input type="email" class="form-control" id="contact-email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Телефон</label>
+                                <input type="tel" class="form-control" id="contact-phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Сообщение</label>
+                            <textarea class="form-control" id="contact-message" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.4040558094775!2d30.672551515153895!3d50.43357409646272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c528037ee799%3A0x70a1ed49dc00af0e!2z0YPQuy4g0J7RgNC-0YHQuNGC0LXQu9GM0L3QsNGPLCA1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1550139809093" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer id="site-footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-3">
+                <p>Следите за нами в</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="../images/Facebook_1.png" alt="facebook">
+                            <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../images/Instagram_2.png" alt="instagram">
+                            <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="../images/YouTube_1.png" alt="youtube">
+                            <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://painterest.com" target="_blank">
+                            <img src="../images/Pinterest_1.png" alt="painterest">
+                            <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-6 text-center">
+                <h4>Подпишитесь на нашу рассылку</h4>
+                <form action="" class="subscribe-form">
+                    <input type="text" placeholder="Укажите ваш e-mail..." pattern="">
+                    <button class="btn" type="submit">Подписаться</button>
+                </form>
+            </div>
+            <div class="col col-3 text-right">
+                <div class="footer-contacts">
+                    <p>ООО “Майер Торг”<br>
+                        02199, Украина<br>
+                        г. Киев, ул. Оросительная, 5В</p>
+
+                    <p>тел.: <a href="tel: +38 067 402-50-90" class="phone-link">+38 067 402-50-90</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
