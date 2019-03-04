@@ -18,20 +18,88 @@
 <body>
 
 <header id="site-header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+    <div class="desktop">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="btns-group">
+                        <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                        <button class="btn current-lang">UK</button>
+                        <button class="btn">
+                            <img src="../images/icons/favorite.svg" alt="favorites">
+                            <span class="count">21</span>
+                        </button>
+                        <button class="btn">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                            <span class="count">8</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <a href="/" class="site-logo">
-                    <img src="../images/logo.png" alt="logo">
-                </a>
+
+            <form action="" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+                </div>
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Для кафе</a>
+                        <div class="sub-menu">
+                            <ul class="sub-nav container">
+                                <li class="menu-item"><a href="#">Барные стулья</a></li>
+                                <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                                <li class="menu-item"><a href="#">Вешалки</a></li>
+                                <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="col-4 text-right">
-                <div class="btns-group">
-                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
-                    <button class="btn current-lang">UK</button>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col col-4">
+                    <button id="mob-menu-toggle" class="btn"><img src="../images/icons/menu.svg" alt="menu toggle"></button>
+                    <button id="mobile-search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                </div>
+                <div class="col col-4 justify-content-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-4 justify-content-end">
                     <button class="btn">
                         <img src="../images/icons/favorite.svg" alt="favorites">
                         <span class="count">21</span>
@@ -44,46 +112,82 @@
             </div>
         </div>
 
-        <form action="" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
-            </div>
-        </form>
-    </div>
+        <nav id="mobile-menu">
+            <div class="menu-bg"></div>
 
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Для кафе</a>
-                    <div class="sub-menu">
-                        <ul class="sub-nav container">
-                            <li class="menu-item"><a href="#">Барные стулья</a></li>
-                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
-                            <li class="menu-item"><a href="#">Вешалки</a></li>
-                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                        </ul>
-                    </div>
+            <ul class="menu">
+                <li class="menu-item not-nav-links">
+                    <ul class="lang-links">
+                        <li><a href="#" class="active">UKR</a></li>
+                        <li><a href="#">RUS</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="../images/Facebook_1.png" alt="facebook">
+                                <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/Instagram_2.png" alt="instagram">
+                                <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <img src="../images/YouTube_1.png" alt="youtube">
+                                <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://painterest.com" target="_blank">
+                                <img src="../images/Pinterest_1.png" alt="painterest">
+                                <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                <li class="menu-item">
+                    <a href="#">Для кафе</a>
+                    <div class="btn sub-menu-toggle"><img src="../images/icons/sub-menu-arrow.png" alt="arrow"></div>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Барные стулья</a></li>
+                        <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                        <li class="menu-item"><a href="#">Вешалки</a></li>
+                        <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Для улицы</a></li>
+                <li class="menu-item"><a href="#">Для офиса</a></li>
+                <li class="menu-item"><a href="#">Для отеля</a></li>
+                <li class="menu-item"><a href="#">Услуги</a></li>
+                <li class="menu-item"><a href="#">Портфолио</a></li>
+                <li class="menu-item"><a href="#">Дизайнеры</a></li>
+                <li class="menu-item"><a href="#">Блог</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
+        </nav>
+
+        <div id="mobile-search">
+            <button class="btn close-btn">
+                <img src="../images/icons/search-close.png" alt="close">
+            </button>
+            <form action="" class="mobile-search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobile-search-input" placeholder="Поиск...">
+                </div>
+            </form>
         </div>
-    </nav>
+    </div>
 </header>
 
 <main id="content">
@@ -138,115 +242,117 @@
 
                     <h4 class="text-center section-title">Новинки</h4>
 
-                    <div id="new-products-carousel" class="owl-carousel owl-theme">
+                    <div class="carousel-wrap">
+                        <div id="new-products-carousel" class="owl-carousel owl-theme">
 
-                        <a href="#" class="product-card">
-                            <span class="availability">В наличии</span>
-                            <span class="discount">-10%</span>
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-1.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул A-1845</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                                <span class="old">4600 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-2.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-3.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-4.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-5.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <span class="availability">В наличии</span>
-                            <span class="discount">-10%</span>
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-1.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул A-1845</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                                <span class="old">4600 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-2.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-3.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-4.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
-                        <a href="#" class="product-card">
-                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
-                            <div class="thumbnail">
-                                <img src="../images/stul-5.jpg" alt="Стул">
-                            </div>
-                            <h5>Стул Paged A-0043</h5>
-                            <div class="price">
-                                <span class="current">3980 грн</span>
-                            </div>
-                        </a>
+                            <a href="#" class="product-card">
+                                <span class="availability">В наличии</span>
+                                <span class="discount">-10%</span>
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-1.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул A-1845</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                    <span class="old">4600 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-2.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-3.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-4.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-5.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <span class="availability">В наличии</span>
+                                <span class="discount">-10%</span>
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-1.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул A-1845</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                    <span class="old">4600 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-2.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-3.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-4.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
+                            <a href="#" class="product-card">
+                                <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                <div class="thumbnail">
+                                    <img src="../images/stul-5.jpg" alt="Стул">
+                                </div>
+                                <h5>Стул Paged A-0043</h5>
+                                <div class="price">
+                                    <span class="current">3980 грн</span>
+                                </div>
+                            </a>
 
+                        </div>
                     </div>
 
                 </div>
@@ -258,28 +364,30 @@
                     <h3 class="text-center section-title">Портфолио</h3>
                     <p class="title-description text-center">Последние реализованые проекты с нашей мебелью</p>
 
-                    <div class="portfolio-grid">
-                        <a href="#" class="portfolio-card">
-                            <div class="thumbnail">
-                                <img src="../images/beef-club.jpg" alt="Beef Club">
-                            </div>
-                            <h4>Ресторан BEEF CLUB</h4>
-                            <span class="location">г. Харьков, Украина</span>
-                        </a>
-                        <a href="#" class="portfolio-card">
-                            <div class="thumbnail">
-                                <img src="../images/winovnik.jpg" alt="Winovnik">
-                            </div>
-                            <h4>Винный бар WINOVNIK</h4>
-                            <span class="location">г. Днепр, Украина</span>
-                        </a>
-                        <a href="#" class="portfolio-card">
-                            <div class="thumbnail">
-                                <img src="../images/california-republic.jpg" alt="California Republic">
-                            </div>
-                            <h4>California Republic & The Bar Upstairs</h4>
-                            <span class="location">г. Николаев, Украина</span>
-                        </a>
+                    <div class="carousel-wrap">
+                        <div class="portfolio-carousel owl-carousel owl-theme">
+                            <a href="#" class="portfolio-card">
+                                <div class="thumbnail">
+                                    <img src="../images/beef-club.jpg" alt="Beef Club">
+                                </div>
+                                <h4>Ресторан BEEF CLUB</h4>
+                                <span class="location">г. Харьков, Украина</span>
+                            </a>
+                            <a href="#" class="portfolio-card">
+                                <div class="thumbnail">
+                                    <img src="../images/winovnik.jpg" alt="Winovnik">
+                                </div>
+                                <h4>Винный бар WINOVNIK</h4>
+                                <span class="location">г. Днепр, Украина</span>
+                            </a>
+                            <a href="#" class="portfolio-card">
+                                <div class="thumbnail">
+                                    <img src="../images/california-republic.jpg" alt="California Republic">
+                                </div>
+                                <h4>California Republic & The Bar Upstairs</h4>
+                                <span class="location">г. Николаев, Украина</span>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -291,56 +399,58 @@
                     <h3 class="text-center section-title">Блог</h3>
                     <p class="title-description text-center">Новости и превью из мира дизайна и мебели со всего мира</p>
 
-                    <div class="blog-grid">
-                        <div class="blog-card">
-                            <a href="#" class="thumbnail">
-                                <img src="../images/blog-1.jpg" alt="blog">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="title"><h4>ИНТЕРЬЕР ТОРГОВЫХ ПОМЕЩЕНИЙ И ОБЪЕКТОВ HORECA 2018: ПОБЕДИТЕЛИ</h4></a>
-                                <p class="description">Подводим итоги конкурса «Интерьер года 2018» в номинации
-                                    «Интерьер торговых помещений и объектов HoReCa». </p>
-                            </div>
-                            <div class="card-meta">
-                                <div>
-                                    <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
-                                    <a href="#" class="category">Дизайн</a>
+                    <div class="carousel-wrap">
+                        <div class="blog-carousel owl-carousel owl-theme">
+                            <div class="blog-card">
+                                <a href="#" class="thumbnail">
+                                    <img src="../images/blog-1.jpg" alt="blog">
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="title"><h4>ИНТЕРЬЕР ТОРГОВЫХ ПОМЕЩЕНИЙ И ОБЪЕКТОВ HORECA 2018: ПОБЕДИТЕЛИ</h4></a>
+                                    <p class="description">Подводим итоги конкурса «Интерьер года 2018» в номинации
+                                        «Интерьер торговых помещений и объектов HoReCa». </p>
                                 </div>
-                                <div class="date">14-12-2018</div>
-                            </div>
-                        </div>
-                        <div class="blog-card">
-                            <a href="#" class="thumbnail">
-                                <img src="../images/blog-2.jpg" alt="blog">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="title"><h4>РЕСТОРАН ПО МОТИВАМ ФИЛЬМА «БЕГУЩИЙ ПО ЛЕЗВИЮ БРИТВЫ»</h4></a>
-                                <p class="description">Дизайн этого ресторана в Одессе – современная интерпретация
-                                    известного фильма.</p>
-                            </div>
-                            <div class="card-meta">
-                                <div>
-                                    <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
-                                    <a href="#" class="category">Архитектура</a>
+                                <div class="card-meta">
+                                    <div>
+                                        <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
+                                        <a href="#" class="category">Дизайн</a>
+                                    </div>
+                                    <div class="date">14-12-2018</div>
                                 </div>
-                                <div class="date">13-12-2018</div>
                             </div>
-                        </div>
-                        <div class="blog-card">
-                            <a href="#" class="thumbnail">
-                                <img src="../images/blog-3.jpg" alt="blog">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="title"><h4>NORMAL: ЗАВЕДЕНИЕ-ТРАНСФОРМЕР В КИЕВЕ ОТ YOD DESIGN LAB</h4></a>
-                                <p class="description">Они всегда в тренде. Каждый раз презентуют что-то интересное и
-                                    современное. Сегодня заведение-трансформер от YOD Design Lab. </p>
-                            </div>
-                            <div class="card-meta">
-                                <div>
-                                    <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
-                                    <a href="#" class="category">Новости</a>
+                            <div class="blog-card">
+                                <a href="#" class="thumbnail">
+                                    <img src="../images/blog-2.jpg" alt="blog">
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="title"><h4>РЕСТОРАН ПО МОТИВАМ ФИЛЬМА «БЕГУЩИЙ ПО ЛЕЗВИЮ БРИТВЫ»</h4></a>
+                                    <p class="description">Дизайн этого ресторана в Одессе – современная интерпретация
+                                        известного фильма.</p>
                                 </div>
-                                <div class="date">12-12-2018</div>
+                                <div class="card-meta">
+                                    <div>
+                                        <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
+                                        <a href="#" class="category">Архитектура</a>
+                                    </div>
+                                    <div class="date">13-12-2018</div>
+                                </div>
+                            </div>
+                            <div class="blog-card">
+                                <a href="#" class="thumbnail">
+                                    <img src="../images/blog-3.jpg" alt="blog">
+                                </a>
+                                <div class="card-content">
+                                    <a href="#" class="title"><h4>NORMAL: ЗАВЕДЕНИЕ-ТРАНСФОРМЕР В КИЕВЕ ОТ YOD DESIGN LAB</h4></a>
+                                    <p class="description">Они всегда в тренде. Каждый раз презентуют что-то интересное и
+                                        современное. Сегодня заведение-трансформер от YOD Design Lab. </p>
+                                </div>
+                                <div class="card-meta">
+                                    <div>
+                                        <span class="views"><img src="../images/views-icon.png" alt="views" class="icon"> 1190</span>
+                                        <a href="#" class="category">Новости</a>
+                                    </div>
+                                    <div class="date">12-12-2018</div>
+                                </div>
                             </div>
                         </div>
                     </div>

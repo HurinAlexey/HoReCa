@@ -15,20 +15,88 @@
 <body>
 
 <header id="site-header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <a href="tel: +38 067 402 50 90" class="phone"><span class="icon">🕿</span> +38 067 402-50-90</a>
+    <div class="desktop">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="btns-group">
+                        <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                        <button class="btn current-lang">UK</button>
+                        <button class="btn">
+                            <img src="../images/icons/favorite.svg" alt="favorites">
+                            <span class="count">21</span>
+                        </button>
+                        <button class="btn">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                            <span class="count">8</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <a href="/" class="site-logo">
-                    <img src="../images/logo.png" alt="logo">
-                </a>
+
+            <form action="" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+                </div>
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Для кафе</a>
+                        <div class="sub-menu">
+                            <ul class="sub-nav container">
+                                <li class="menu-item"><a href="#">Барные стулья</a></li>
+                                <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                                <li class="menu-item"><a href="#">Вешалки</a></li>
+                                <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="col-4 text-right">
-                <div class="btns-group">
-                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
-                    <button class="btn current-lang">UK</button>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col col-4">
+                    <button id="mob-menu-toggle" class="btn"><img src="../images/icons/menu.svg" alt="menu toggle"></button>
+                    <button id="mobile-search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                </div>
+                <div class="col col-4 justify-content-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-4 justify-content-end">
                     <button class="btn">
                         <img src="../images/icons/favorite.svg" alt="favorites">
                         <span class="count">21</span>
@@ -41,46 +109,82 @@
             </div>
         </div>
 
-        <form action="" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
-            </div>
-        </form>
-    </div>
+        <nav id="mobile-menu">
+            <div class="menu-bg"></div>
 
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Для кафе</a>
-                    <div class="sub-menu">
-                        <ul class="sub-nav container">
-                            <li class="menu-item"><a href="#">Барные стулья</a></li>
-                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
-                            <li class="menu-item"><a href="#">Вешалки</a></li>
-                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                        </ul>
-                    </div>
+            <ul class="menu">
+                <li class="menu-item not-nav-links">
+                    <ul class="lang-links">
+                        <li><a href="#" class="active">UKR</a></li>
+                        <li><a href="#">RUS</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="../images/Facebook_1.png" alt="facebook">
+                                <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/Instagram_2.png" alt="instagram">
+                                <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <img src="../images/YouTube_1.png" alt="youtube">
+                                <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://painterest.com" target="_blank">
+                                <img src="../images/Pinterest_1.png" alt="painterest">
+                                <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                <li class="menu-item">
+                    <a href="#">Для кафе</a>
+                    <div class="btn sub-menu-toggle"><img src="../images/icons/sub-menu-arrow.png" alt="arrow"></div>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Барные стулья</a></li>
+                        <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                        <li class="menu-item"><a href="#">Вешалки</a></li>
+                        <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Для улицы</a></li>
+                <li class="menu-item"><a href="#">Для офиса</a></li>
+                <li class="menu-item"><a href="#">Для отеля</a></li>
+                <li class="menu-item"><a href="#">Услуги</a></li>
+                <li class="menu-item"><a href="#">Портфолио</a></li>
+                <li class="menu-item"><a href="#">Дизайнеры</a></li>
+                <li class="menu-item"><a href="#">Блог</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
+        </nav>
+
+        <div id="mobile-search">
+            <button class="btn close-btn">
+                <img src="../images/icons/search-close.png" alt="close">
+            </button>
+            <form action="" class="mobile-search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobile-search-input" placeholder="Поиск...">
+                </div>
+            </form>
         </div>
-    </nav>
+    </div>
 </header>
 
 <main id="content">
@@ -95,11 +199,11 @@
                 </ol>
             </nav>
 
-            <div class="row">
-                <div class="col col-4">
+            <div class="row desktop">
+                <div class="col">
 
                     <div class="project-authors">
-                        <h4>Авторы проекта</h4>
+                        <h3>Авторы проекта</h3>
                         <a href="#" class="author-card">
                             <div class="thumbnail">
                                 <img src="../images/kritskiy-studio.png" alt="Kritskiy Studio">
@@ -180,7 +284,7 @@
                     </div>
 
                 </div>
-                <div class="col col-8">
+                <div class="col">
 
                     <div class="title-wrap">
                         <h2>Beef Club</h2>
@@ -368,6 +472,238 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            <div class="mobile">
+                <div class="title-wrap">
+                    <h2>Beef Club</h2>
+                    <span class="designer-location"><img src="../images/map-marker.png" alt="location marker" class="icon"> Харьков / Украина</span>
+
+                    <div class="social">
+
+                    </div>
+                </div>
+
+                <div class="project-authors">
+                    <a href="#" class="author-card">
+                        <div class="thumbnail">
+                            <img src="../images/kritskiy-studio.png" alt="Kritskiy Studio">
+                        </div>
+                        <div class="author-info">
+                            <h5>KRITSKIY STUDIO</h5>
+                            <span class="position">Архитектурное бюро</span>
+                        </div>
+                    </a>
+                    <a href="#" class="author-card">
+                        <div class="thumbnail">
+                            <img src="../images/konstantit-kritskiy.jpg" alt="Konstantin Kritskiy">
+                        </div>
+                        <div class="author-info">
+                            <h5>Константин Критский</h5>
+                            <span class="position">Дизайнер</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="mobile-gallery-content">
+                    <div class="gallery-wrap">
+                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                            <button class="btn fullwidth-btn">
+                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                            </button>
+                            <img src="../images/photo-1.jpg" class="d-block w-100" alt="gallery photo"
+                                 data-target="#modal-carousel" data-slide-to="1">
+                        </div>
+                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                            <button class="btn fullwidth-btn">
+                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                            </button>
+                            <img src="../images/photo-2.jpg" class="d-block w-100" alt="gallery photo"
+                                 data-target="#modal-carousel" data-slide-to="2">
+                        </div>
+                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                            <button class="btn fullwidth-btn">
+                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                            </button>
+                            <img src="../images/photo-3.jpg" class="d-block w-100" alt="gallery photo"
+                                 data-target="#modal-carousel" data-slide-to="3">
+                        </div>
+                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                            <button class="btn fullwidth-btn">
+                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                            </button>
+                            <img src="../images/photo-4.jpg" class="d-block w-100" alt="gallery photo"
+                                 data-target="#modal-carousel" data-slide-to="4">
+                        </div>
+                    </div>
+
+                    <button class="btn show-all-photos">
+                        Смотреть все фото
+                    </button>
+                </div>
+
+                <div class="project-details">
+                    <h4>Детали проекта</h4>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Название</td>
+                            <td>Beef Club</td>
+                        </tr>
+                        <tr>
+                            <td>Год</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>Тип</td>
+                            <td>Кафе и рестораны</td>
+                        </tr>
+                        <tr>
+                            <td>Стиль</td>
+                            <td>Классический</td>
+                        </tr>
+                        <tr>
+                            <td>Местонахождение</td>
+                            <td>Киев</td>
+                        </tr>
+                        <tr>
+                            <td>Фото</td>
+                            <td>Скрынник Антон</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="description">
+                    <h4>Описание проекта</h4>
+                    <p>Мастерская KRITSKIY STUDIO во главе с архитектором Константином Критским завершила свой новый
+                        проект – интерьер мясного ресторана. Beef Club – это место с уникальной историей. Современное
+                        заведение находится в самом сердце Харькова. Внутренняя обстановка выдержана в спокойных
+                        оттенках, их разбавляет мебель от Mayer Trade: стильные кресла из бука в яркой обивке,
+                        высокие барные стулья, банкетка и классические модели с цветными сиденьями, которые фабрика
+                        изготавливала под заказ. В качестве декора авторы проекта использовали оригинальные люстры,
+                        светильники и картины, которые очень удачно размещены по всему периметру заведения.</p>
+                    <a href="#" class="read-more">Подробнее</a>
+                </div>
+
+                <div class="including-products">
+                    <h4>Мебель из проекта</h4>
+                    <div class="product-grid">
+
+                        <a href="#" class="product-card">
+                            <span class="availability">В наличии</span>
+                            <span class="discount">-10%</span>
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-1.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул A-1845</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                                <span class="old">4600 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-2.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="wholesale">
+                                    3680 грн
+                                    <span class="info">
+                                        ?
+                                        <div class="info-text">Цена при покупке от 25 штук</div>
+                                    </span>
+                                    <!--<span class="info" data-container="body" data-toggle="popover" data-placement="top" data-content="Цена при покупке от 25 штук">?</span>-->
+                                </span>
+                                <span class="current">4600 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-3.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-4.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-5.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-3.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-4.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card">
+                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                            <div class="thumbnail">
+                                <img src="../images/stul-5.jpg" alt="Стул">
+                            </div>
+                            <h5>Стул Paged A-0043</h5>
+                            <div class="price">
+                                <span class="current">3980 грн</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="related-projects">
+                    <h4>Cвязанные проекты</h4>
+                    <a href="#" class="project-item">
+                        <div class="thumbnail">
+                            <img src="../images/winovnik.jpg" alt="Winovnik">
+                        </div>
+                        <h5>Винный бар WINOVNIK</h5>
+                    </a>
+                    <a href="#" class="project-item">
+                        <div class="thumbnail">
+                            <img src="../images/california-republic.jpg" alt="California Rebublic">
+                        </div>
+                        <h5>California Republic&The Bar Upstairs</h5>
+                    </a>
                 </div>
             </div>
 

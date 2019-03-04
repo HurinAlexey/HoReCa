@@ -15,20 +15,88 @@
 <body>
 
 <header id="site-header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <a href="tel: +38 067 402 50 90" class="phone"><span class="icon">🕿</span> +38 067 402-50-90</a>
+    <div class="desktop">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="btns-group">
+                        <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                        <button class="btn current-lang">UK</button>
+                        <button class="btn">
+                            <img src="../images/icons/favorite.svg" alt="favorites">
+                            <span class="count">21</span>
+                        </button>
+                        <button class="btn">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                            <span class="count">8</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <a href="/" class="site-logo">
-                    <img src="../images/logo.png" alt="logo">
-                </a>
+
+            <form action="" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+                </div>
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Для кафе</a>
+                        <div class="sub-menu">
+                            <ul class="sub-nav container">
+                                <li class="menu-item"><a href="#">Барные стулья</a></li>
+                                <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                                <li class="menu-item"><a href="#">Вешалки</a></li>
+                                <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="col-4 text-right">
-                <div class="btns-group">
-                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
-                    <button class="btn current-lang">UK</button>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col col-4">
+                    <button id="mob-menu-toggle" class="btn"><img src="../images/icons/menu.svg" alt="menu toggle"></button>
+                    <button id="mobile-search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                </div>
+                <div class="col col-4 justify-content-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-4 justify-content-end">
                     <button class="btn">
                         <img src="../images/icons/favorite.svg" alt="favorites">
                         <span class="count">21</span>
@@ -41,46 +109,82 @@
             </div>
         </div>
 
-        <form action="" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
-            </div>
-        </form>
-    </div>
+        <nav id="mobile-menu">
+            <div class="menu-bg"></div>
 
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Для кафе</a>
-                    <div class="sub-menu">
-                        <ul class="sub-nav container">
-                            <li class="menu-item"><a href="#">Барные стулья</a></li>
-                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
-                            <li class="menu-item"><a href="#">Вешалки</a></li>
-                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                        </ul>
-                    </div>
+            <ul class="menu">
+                <li class="menu-item not-nav-links">
+                    <ul class="lang-links">
+                        <li><a href="#" class="active">UKR</a></li>
+                        <li><a href="#">RUS</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="../images/Facebook_1.png" alt="facebook">
+                                <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/Instagram_2.png" alt="instagram">
+                                <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <img src="../images/YouTube_1.png" alt="youtube">
+                                <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://painterest.com" target="_blank">
+                                <img src="../images/Pinterest_1.png" alt="painterest">
+                                <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                <li class="menu-item">
+                    <a href="#">Для кафе</a>
+                    <div class="btn sub-menu-toggle"><img src="../images/icons/sub-menu-arrow.png" alt="arrow"></div>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Барные стулья</a></li>
+                        <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                        <li class="menu-item"><a href="#">Вешалки</a></li>
+                        <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Для улицы</a></li>
+                <li class="menu-item"><a href="#">Для офиса</a></li>
+                <li class="menu-item"><a href="#">Для отеля</a></li>
+                <li class="menu-item"><a href="#">Услуги</a></li>
+                <li class="menu-item"><a href="#">Портфолио</a></li>
+                <li class="menu-item"><a href="#">Дизайнеры</a></li>
+                <li class="menu-item"><a href="#">Блог</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
+        </nav>
+
+        <div id="mobile-search">
+            <button class="btn close-btn">
+                <img src="../images/icons/search-close.png" alt="close">
+            </button>
+            <form action="" class="mobile-search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobile-search-input" placeholder="Поиск...">
+                </div>
+            </form>
         </div>
-    </nav>
+    </div>
 </header>
 
 <main id="content">
@@ -99,14 +203,14 @@
                 <div class="col-12">
 
                     <div class="collection-banner">
-                        <img src="../images/sandiss.jpg" alt="Sandiss">
                         <h3>Офисная мебель Sandiss</h3>
+                        <img src="../images/sandiss.jpg" alt="Sandiss">
                     </div>
 
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row desktop">
                 <div class="col-12">
 
                     <ul class="nav nav-tabs" id="product-tabs" role="tablist">
@@ -123,6 +227,11 @@
                         <li class="nav-item">
                             <a class="nav-link" id="products-from-collection-tab" data-toggle="tab" href="#products-from-collection" role="tab" aria-controls="products-from-collection" aria-selected="false">
                                 Товары из коллекции
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="true">
+                                Фото
                             </a>
                         </li>
                     </ul>
@@ -294,13 +403,325 @@
                             </div>
 
                         </div>
+                        <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+
+                            <div class="gallery-wrap">
+                                <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                    <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                    <button class="btn fullwidth-btn">
+                                        <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                    </button>
+                                    <img src="../images/photo-1.jpg" class="d-block w-100" alt="gallery photo"
+                                         data-target="#modal-carousel" data-slide-to="1">
+                                </div>
+                                <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                    <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                    <button class="btn fullwidth-btn">
+                                        <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                    </button>
+                                    <img src="../images/photo-2.jpg" class="d-block w-100" alt="gallery photo"
+                                         data-target="#modal-carousel" data-slide-to="2">
+                                </div>
+                                <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                    <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                    <button class="btn fullwidth-btn">
+                                        <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                    </button>
+                                    <img src="../images/photo-3.jpg" class="d-block w-100" alt="gallery photo"
+                                         data-target="#modal-carousel" data-slide-to="3">
+                                </div>
+                                <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                    <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                    <button class="btn fullwidth-btn">
+                                        <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                    </button>
+                                    <img src="../images/photo-4.jpg" class="d-block w-100" alt="gallery photo"
+                                         data-target="#modal-carousel" data-slide-to="4">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mobile">
+                <div class="col">
+
+                    <div id="mobile-tabs">
+
+                        <div class="card">
+                            <div class="card-header" id="mobile-description">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#mobile-description-content" aria-expanded="true" aria-controls="mobile-description-content">
+                                    <span class="tab-name">Описание</span>
+                                    <svg viewBox="0 0 13 13" class="tab-toggle-icon">
+                                        <line x1="6.5" y1="0" x2="6.5" y2="13" stroke="#5f5f5f" stroke-width="1px" class="vertical-line" />
+                                        <line x1="0" y1="6.5" x2="13" y2="6.5" stroke="#5f5f5f" stroke-width="1px" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="mobile-description-content" class="collapse multi-collapse show" aria-labelledby="mobile-description">
+                                <div class="card-body">
+                                    <p><b>Lorem</b> ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, animi consectetur delectus dolor
+                                        dolorem illum libero nostrum optio quo? Asperiores debitis eius exercitationem ipsum maiores
+                                        odio porro ratione sapiente tempore.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur cumque ducimus esse est ex
+                                        excepturi exercitationem <em>facere harum magnam</em> nisi nostrum obcaecati odit officia officiis, perferendis
+                                        quam quisquam ratione.</p>
+                                    <p>Delectus dolore doloribus eius inventore, nihil possimus sed! Eligendi esse fugit illo, minus
+                                        pariatur rerum sapiente sit. Beatae debitis delectus eveniet id iste officiis omnis quam quasi
+                                        reiciendis, ut? Ipsum?</p>
+                                    <p>Amet, dolor dolorem dolorum error, eveniet facere itaque laborum officia officiis quidem sint tempora
+                                        totam, unde velit vitae. Amet, beatae, quis. Commodi delectus dolorum esse hic illo ipsa libero
+                                        soluta!</p>
+                                    <p>Amet animi atque commodi, cupiditate debitis distinctio dolores eos excepturi facere fuga inventore
+                                        ipsa iusto laborum libero nam nemo nesciunt nulla odit perferendis possimus rem sapiente sed tempora
+                                        vitae voluptatem!</p>
+                                    <p>A ad amet animi at beatae delectus deleniti dolore dolorem dolores ducimus eaque error eveniet ex
+                                        excepturi incidunt inventore iusto, libero minus, modi non quis quo recusandae totam ullam vel.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="mobile-characteristics">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#mobile-characteristics-content" aria-expanded="false" aria-controls="mobile-characteristics-content">
+                                    <span class="tab-name">Характеристики</span>
+                                    <svg viewBox="0 0 13 13" class="tab-toggle-icon">
+                                        <line x1="6.5" y1="0" x2="6.5" y2="13" stroke="#5f5f5f" stroke-width="1px" class="vertical-line" />
+                                        <line x1="0" y1="6.5" x2="13" y2="6.5" stroke="#5f5f5f" stroke-width="1px" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="mobile-characteristics-content" class="collapse multi-collapse" aria-labelledby="mobile-characteristics">
+                                <div class="card-body">
+
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">Основные характеристики</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Lorem.</td>
+                                            <td>Fuga?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem.</td>
+                                            <td>Exercitationem!</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem.</td>
+                                            <td>Assumenda.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem.</td>
+                                            <td>Itaque!</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem.</td>
+                                            <td>Odit.</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="mobile-from-collection">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#mobile-from-collection-content" aria-expanded="false" aria-controls="mobile-from-collection-content">
+                                    <span class="tab-name">Похожие модели</span>
+                                    <svg viewBox="0 0 13 13" class="tab-toggle-icon">
+                                        <line x1="6.5" y1="0" x2="6.5" y2="13" stroke="#5f5f5f" stroke-width="1px" class="vertical-line" />
+                                        <line x1="0" y1="6.5" x2="13" y2="6.5" stroke="#5f5f5f" stroke-width="1px" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="mobile-from-collection-content" class="collapse multi-collapse" aria-labelledby="mobile-from-collection">
+                                <div class="card-body">
+
+                                    <div class="product-grid">
+
+                                        <a href="#" class="product-card">
+                                            <span class="availability">В наличии</span>
+                                            <span class="discount">-10%</span>
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-1.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул A-1845</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                                <span class="old">4600 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-2.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-3.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-4.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-5.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <span class="availability">В наличии</span>
+                                            <span class="discount">-10%</span>
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-1.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул A-1845</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                                <span class="old">4600 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-2.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-3.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-4.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="product-card">
+                                            <button class="btn btn-favorite"><img src="../images/icons/favorite.svg" alt="favorite"></button>
+                                            <div class="thumbnail">
+                                                <img src="../images/stul-5.jpg" alt="Стул">
+                                            </div>
+                                            <h5>Стул Paged A-0043</h5>
+                                            <div class="price">
+                                                <span class="current">3980 грн</span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="mobile-gallery">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#mobile-gallery-content" aria-expanded="false" aria-controls="mobile-gallery-content">
+                                    <span class="tab-name">Фото</span>
+                                    <svg viewBox="0 0 13 13" class="tab-toggle-icon">
+                                        <line x1="6.5" y1="0" x2="6.5" y2="13" stroke="#5f5f5f" stroke-width="1px" class="vertical-line" />
+                                        <line x1="0" y1="6.5" x2="13" y2="6.5" stroke="#5f5f5f" stroke-width="1px" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div id="mobile-gallery-content" class="collapse multi-collapse" aria-labelledby="mobile-gallery">
+                                <div class="card-body">
+
+                                    <div class="gallery-wrap">
+                                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                            <button class="btn fullwidth-btn">
+                                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                            </button>
+                                            <img src="../images/photo-1.jpg" class="d-block w-100" alt="gallery photo"
+                                                 data-target="#modal-carousel" data-slide-to="1">
+                                        </div>
+                                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                            <button class="btn fullwidth-btn">
+                                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                            </button>
+                                            <img src="../images/photo-2.jpg" class="d-block w-100" alt="gallery photo"
+                                                 data-target="#modal-carousel" data-slide-to="2">
+                                        </div>
+                                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                            <button class="btn fullwidth-btn">
+                                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                            </button>
+                                            <img src="../images/photo-3.jpg" class="d-block w-100" alt="gallery photo"
+                                                 data-target="#modal-carousel" data-slide-to="3">
+                                        </div>
+                                        <div class="gallery-item" data-toggle="modal" data-target="#modal-carousel-wrapper">
+                                            <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                            <button class="btn fullwidth-btn">
+                                                <img src="../images/fullwidth-icon.png" alt="fullwidth">
+                                            </button>
+                                            <img src="../images/photo-4.jpg" class="d-block w-100" alt="gallery photo"
+                                                 data-target="#modal-carousel" data-slide-to="4">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
 
             <!-- Modal Slider -->
-            <div class="modal fade" id="modal-carousel" tabindex="-1" role="dialog" aria-labelledby="modal-carousel" aria-hidden="true">
+            <div class="modal fade" id="modal-carousel-wrapper" tabindex="-1" role="dialog" aria-labelledby="modal-carousel" aria-hidden="true">
                 <button class="btn btn-close" data-dismiss="modal" aria-label="Close">
                     <img src="../images/modal-close.png" alt="close">
                     <img src="../images/modal-close-hover.png" alt="close" class="hover-img">
@@ -308,14 +729,13 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
 
-                        <div id="modal-product-carousel" class="carousel slide" data-ride="carousel">
+                        <div id="modal-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active text-center">
                                     <div class="photo-wrap">
                                         <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
-                                        <!--<img src="../images/kreslo-april-1.jpg" class="d-block w-100" alt="kreslo april">-->
                                         <div class="zoom">
-                                            <img src="../images/example.jpg" class="d-block" alt="kreslo april">
+                                            <img src="../images/photo-1.jpg" class="d-block" alt="gallery photo">
                                         </div>
                                     </div>
                                 </div>
@@ -323,7 +743,7 @@
                                     <div class="photo-wrap">
                                         <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
                                         <div class="zoom">
-                                            <img src="../images/example-2.jpg" class="d-block" alt="kreslo april">
+                                            <img src="../images/photo-2.jpg" class="d-block" alt="gallery photo">
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +751,15 @@
                                     <div class="photo-wrap">
                                         <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
                                         <div class="zoom">
-                                            <img src="../images/kreslo-april-3.jpg" class="d-block" alt="kreslo april">
+                                            <img src="../images/photo-3.jpg" class="d-block" alt="gallery photo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <div class="photo-wrap">
+                                        <a class="painterest-share" data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url=https://www.pufetto.com.ua/&media=../images/kreslo-april-1.jpg&description=chear" data-pin-custom="true"><img src="../images/painterest-brand.png"></a>
+                                        <div class="zoom">
+                                            <img src="../images/photo-4.jpg" class="d-block" alt="gallery photo">
                                         </div>
                                     </div>
                                 </div>
@@ -339,12 +767,12 @@
                         </div>
 
                         <div class="slider-footer">
-                            <a class="prev-slide" href="#modal-product-carousel" role="button" data-slide="prev">
+                            <a class="prev-slide" href="#modal-carousel" role="button" data-slide="prev">
                                 <img src="../images/prod-slider-prev.png" alt="prev">
                                 <img src="../images/prod-slider-prev-hover.png" alt="prev" class="hover-img">
                             </a>
-                            <div class="current-slide">Фото <span class="slide-index">1</span> / 3</div>
-                            <a class="next-slide" href="#modal-product-carousel" role="button" data-slide="next">
+                            <div class="current-slide">Фото <span class="slide-index">1</span> / 4</div>
+                            <a class="next-slide" href="#modal-carousel" role="button" data-slide="next">
                                 <img src="../images/prod-slider-next.png" alt="next">
                                 <img src="../images/prod-slider-next-hover.png" alt="next" class="hover-img">
                             </a>
@@ -352,11 +780,11 @@
 
                     </div>
                 </div>
-                <button class="btn btn-prev" data-target="#modal-product-carousel" data-slide="prev">
+                <button class="btn btn-prev" data-target="#modal-carousel" data-slide="prev">
                     <img src="../images/modal-prev.png" alt=""prev>
                     <img src="../images/modal-prev-hover.png" alt=""prev class="hover-img">
                 </button>
-                <button class="btn btn-next" data-target="#modal-product-carousel" data-slide="next">
+                <button class="btn btn-next" data-target="#modal-carousel" data-slide="next">
                     <img src="../images/modal-next.png" alt="next">
                     <img src="../images/modal-next-hover.png" alt="next" class="hover-img">
                 </button>
@@ -428,6 +856,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../js/owl.carousel.min.js"></script>
 
 <script src="../js/main.js"></script>
 </body>

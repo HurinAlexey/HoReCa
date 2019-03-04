@@ -16,20 +16,88 @@
 <body>
 
 <header id="site-header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+    <div class="desktop">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="tel: +38 067 402 50 90" class="phone">🕿 +38 067 402-50-90</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="btns-group">
+                        <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                        <button class="btn current-lang">UK</button>
+                        <button class="btn">
+                            <img src="../images/icons/favorite.svg" alt="favorites">
+                            <span class="count">21</span>
+                        </button>
+                        <button class="btn">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                            <span class="count">8</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <a href="/" class="site-logo">
-                    <img src="../images/logo.png" alt="logo">
-                </a>
+
+            <form action="" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
+                </div>
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Для кафе</a>
+                        <div class="sub-menu">
+                            <ul class="sub-nav container">
+                                <li class="menu-item"><a href="#">Барные стулья</a></li>
+                                <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                                <li class="menu-item"><a href="#">Вешалки</a></li>
+                                <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                                <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                                <li class="menu-item"><a href="#">Столы</a></li>
+                                <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                                <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="col-4 text-right">
-                <div class="btns-group">
-                    <button id="search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
-                    <button class="btn current-lang">UK</button>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col col-4">
+                    <button id="mob-menu-toggle" class="btn"><img src="../images/icons/menu.svg" alt="menu toggle"></button>
+                    <button id="mobile-search-toggle" class="btn"><img src="../images/icons/search.svg" alt="search"></button>
+                </div>
+                <div class="col col-4 justify-content-center">
+                    <a href="/" class="site-logo">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-4 justify-content-end">
                     <button class="btn">
                         <img src="../images/icons/favorite.svg" alt="favorites">
                         <span class="count">21</span>
@@ -42,46 +110,82 @@
             </div>
         </div>
 
-        <form action="" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search-input" placeholder="Поиск...">
-            </div>
-        </form>
-    </div>
+        <nav id="mobile-menu">
+            <div class="menu-bg"></div>
 
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Для кафе</a>
-                    <div class="sub-menu">
-                        <ul class="sub-nav container">
-                            <li class="menu-item"><a href="#">Барные стулья</a></li>
-                            <li class="menu-item"><a href="#">Барные табуреты</a></li>
-                            <li class="menu-item"><a href="#">Вешалки</a></li>
-                            <li class="menu-item"><a href="#">Кресла для кафе</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                            <li class="menu-item"><a href="#">Стулья для кафе</a></li>
-                            <li class="menu-item"><a href="#">Столы</a></li>
-                            <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
-                            <li class="menu-item"><a href="#">Столешницы для столов</a></li>
-                        </ul>
-                    </div>
+            <ul class="menu">
+                <li class="menu-item not-nav-links">
+                    <ul class="lang-links">
+                        <li><a href="#" class="active">UKR</a></li>
+                        <li><a href="#">RUS</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="../images/Facebook_1.png" alt="facebook">
+                                <img src="../images/Facebook_2.png" alt="facebook" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/Instagram_2.png" alt="instagram">
+                                <img src="../images/Instagram_1.png" alt="instagram" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <img src="../images/YouTube_1.png" alt="youtube">
+                                <img src="../images/YouTube_2.png" alt="youtube" class="hover-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://painterest.com" target="_blank">
+                                <img src="../images/Pinterest_1.png" alt="painterest">
+                                <img src="../images/Pinterest_2.png" alt="painterest" class="hover-img">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Для улицы</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для офиса</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Для отеля</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Портфолио</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Дизайнеры</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                <li class="menu-item">
+                    <a href="#">Для кафе</a>
+                    <div class="btn sub-menu-toggle"><img src="../images/icons/sub-menu-arrow.png" alt="arrow"></div>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Барные стулья</a></li>
+                        <li class="menu-item"><a href="#">Барные табуреты</a></li>
+                        <li class="menu-item"><a href="#">Вешалки</a></li>
+                        <li class="menu-item"><a href="#">Кресла для кафе</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                        <li class="menu-item"><a href="#">Стулья для кафе</a></li>
+                        <li class="menu-item"><a href="#">Столы</a></li>
+                        <li class="menu-item"><a href="#">Опоры и базы для столов</a></li>
+                        <li class="menu-item"><a href="#">Столешницы для столов</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Для улицы</a></li>
+                <li class="menu-item"><a href="#">Для офиса</a></li>
+                <li class="menu-item"><a href="#">Для отеля</a></li>
+                <li class="menu-item"><a href="#">Услуги</a></li>
+                <li class="menu-item"><a href="#">Портфолио</a></li>
+                <li class="menu-item"><a href="#">Дизайнеры</a></li>
+                <li class="menu-item"><a href="#">Блог</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
+        </nav>
+
+        <div id="mobile-search">
+            <button class="btn close-btn">
+                <img src="../images/icons/search-close.png" alt="close">
+            </button>
+            <form action="" class="mobile-search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobile-search-input" placeholder="Поиск...">
+                </div>
+            </form>
         </div>
-    </nav>
+    </div>
 </header>
 
 <main id="content">
@@ -107,21 +211,21 @@
 
             <div class="row">
                 <div class="col filter-wrap">
-                    <div class="filter">
-                        <span class="result">27 вариантов</span>
+                    <div class="filter desktop">
+                        <span class="result">27 моделей</span>
 
                         <div class="active-filters">
                             <a href="#" class="filter-item">
                                 <button class="btn remove"><span aria-hidden="true">&times;</span></button>
-                                <span>Коммерческий дизайн</span>
+                                <span>Paged</span>
                             </a>
                             <a href="#" class="filter-item">
                                 <button class="btn remove"><span aria-hidden="true">&times;</span></button>
-                                <span>Одесса</span>
+                                <span>Дерево</span>
                             </a>
                             <a href="#" class="filter-item">
                                 <button class="btn remove"><span aria-hidden="true">&times;</span></button>
-                                <span>Архитектура</span>
+                                <span>Цена от 1800 грн до 10 000 грн</span>
                             </a>
                         </div>
 
@@ -130,7 +234,7 @@
                             <div class="card">
                                 <div class="card-header" id="option-price">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-price" aria-expanded="false" aria-controls="option-value-price">
-                                        <span class="option-name">Цена услуг</span>
+                                        <span class="option-name">Цена</span>
                                         <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
                                     </button>
                                 </div>
@@ -149,7 +253,7 @@
                             <div class="card">
                                 <div class="card-header" id="option-1">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-1" aria-expanded="false" aria-controls="option-value-1">
-                                        <span class="option-name">Творческие области</span>
+                                        <span class="option-name">Производители</span>
                                         <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
                                     </button>
                                 </div>
@@ -185,7 +289,7 @@
                             <div class="card">
                                 <div class="card-header" id="option-2">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-2" aria-expanded="false" aria-controls="option-value-2">
-                                        <span class="option-name">Местонахождение офиса</span>
+                                        <span class="option-name">Материал каркаса</span>
                                         <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
                                     </button>
                                 </div>
@@ -197,13 +301,129 @@
                                 </div>
                             </div>
 
+                            <div class="card">
+                                <div class="card-header" id="option-3">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-3" aria-expanded="false" aria-controls="option-value-3">
+                                        <span class="option-name">Тип стульев</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-3" class="collapse multi-collapse show" aria-labelledby="option-3">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, est.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="option-4">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#option-value-4" aria-expanded="false" aria-controls="option-value-4">
+                                        <span class="option-name">Страна производства</span>
+                                        <img src="../images/dropdown-arrow.png" alt="dropdown arrow" class="dropdown-arrow">
+                                    </button>
+                                </div>
+
+                                <div id="option-value-4" class="collapse multi-collapse show" aria-labelledby="option-4">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, veritatis.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+
+                    <div class="mobile-btns-group mobile">
+                        <button class="btn filter-btn">Фильтр</button>
+                    </div>
+
+                    <div id="mobile-filter" class="modal-filter mobile">
+                        <button class="btn close-filter">
+                            <svg viewBox="0 0 15 15" class="close-icon">
+                                <line x1="0" y1="0" x2="15" y2="15" stroke="#000" stroke-width="2"></line>
+                                <line x1="0" y1="15" x2="15" y2="0" stroke="#000" stroke-width="2"></line>
+                            </svg>
+                        </button>
+
+                        <h4><span class="option-name">Фильтр</span></h4>
+
+                        <ul class="active-filters">
+                            <li class="filter-item">
+                                <a href="#">Paged</a>
+                                <div class="btn remove-filter">
+                                    <svg viewBox="0 0 15 15" class="close-icon">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#000" stroke-width="2"></line>
+                                        <line x1="0" y1="15" x2="15" y2="0" stroke="#000" stroke-width="2"></line>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="filter-item">
+                                <a href="#">Дерево</a>
+                                <div class="btn remove-filter">
+                                    <svg viewBox="0 0 15 15" class="close-icon">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#000" stroke-width="2"></line>
+                                        <line x1="0" y1="15" x2="15" y2="0" stroke="#000" stroke-width="2"></line>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="remove-all-filters">Удалить все</a>
+
+                        <ul class="filter-list">
+                            <li><button class="btn filter-btn" data-target="mobile-brand">Бренд</button></li>
+                            <li><button class="btn filter-btn" data-target="mobile-material">Материал</button></li>
+                            <li><button class="btn filter-btn" data-target="mobile-style">Стиль</button></li>
+                        </ul>
+
+                        <div class="divider"></div>
+
+                        <button class="btn show-filter">Показать</button>
+                    </div>
+
+                    <div id="mobile-brand" class="modal-filter filter-option mobile">
+                        <button class="btn close-filter">
+                            <svg viewBox="0 0 15 15" class="close-icon">
+                                <line x1="0" y1="0" x2="15" y2="15" stroke="#000" stroke-width="2"></line>
+                                <line x1="0" y1="15" x2="15" y2="0" stroke="#000" stroke-width="2"></line>
+                            </svg>
+                        </button>
+
+                        <h4><span class="option-name">Бренд</span></h4>
+
+                        <div class="options-list">
+                            <div class="form-group custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile-value-paged">
+                                <label class="custom-control-label" for="mobile-value-paged">Paged</label>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile-value-scab-design">
+                                <label class="custom-control-label" for="mobile-value-scab-design">Scab Design</label>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile-value-nardi">
+                                <label class="custom-control-label" for="mobile-value-nardi">Nardi</label>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile-value-midj">
+                                <label class="custom-control-label" for="mobile-value-midj">Midj</label>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile-value-fenabel">
+                                <label class="custom-control-label" for="mobile-value-fenabel">Fenabel</label>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <button class="btn show-filter">Применить</button>
                     </div>
                 </div>
                 <div class="col">
 
                     <div class="row designer-item">
-                        <div class="col-4 designer-card">
+                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 designer-card">
                             <a href="#" class="thumbnail">
                                 <img src="../images/kritskiy-studio.png" alt="KRITSKIY STUDIO">
                             </a>
@@ -214,7 +434,7 @@
                             </div>
                         </div>
 
-                        <div class="col-8 last-works">
+                        <div class="col-12 col-sm-6 col-lg-7 col-xl-8 last-works">
                             <a href="#" class="work-item">
                                 <img src="../images/beef-club.jpg" alt="photo">
                             </a>
@@ -228,7 +448,7 @@
                     </div>
 
                     <div class="row designer-item">
-                        <div class="col-4 designer-card">
+                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 designer-card">
                             <a href="#" class="thumbnail">
                                 <img src="../images/konstantit-kritskiy.jpg" alt="Konstantin Kritskiy">
                             </a>
@@ -239,7 +459,7 @@
                             </div>
                         </div>
 
-                        <div class="col-8 last-works">
+                        <div class="col-12 col-sm-6 col-lg-7 col-xl-8 last-works">
                             <a href="#" class="work-item">
                                 <img src="../images/beef-club.jpg" alt="photo">
                             </a>
@@ -253,7 +473,7 @@
                     </div>
 
                     <div class="row designer-item">
-                        <div class="col-4 designer-card">
+                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 designer-card">
                             <a href="#" class="thumbnail">
                                 <img src="../images/kritskiy-studio.png" alt="KRITSKIY STUDIO">
                             </a>
@@ -264,7 +484,7 @@
                             </div>
                         </div>
 
-                        <div class="col-8 last-works">
+                        <div class="col-12 col-sm-6 col-lg-7 col-xl-8 last-works">
                             <a href="#" class="work-item">
                                 <img src="../images/beef-club.jpg" alt="photo">
                             </a>
@@ -278,7 +498,7 @@
                     </div>
 
                     <div class="row designer-item">
-                        <div class="col-4 designer-card">
+                        <div class="col-12 col-sm-6 col-lg-5 col-xl-4 designer-card">
                             <a href="#" class="thumbnail">
                                 <img src="../images/konstantit-kritskiy.jpg" alt="Konstantin Kritskiy">
                             </a>
@@ -289,7 +509,7 @@
                             </div>
                         </div>
 
-                        <div class="col-8 last-works">
+                        <div class="col-12 col-sm-6 col-lg-7 col-xl-8 last-works">
                             <a href="#" class="work-item">
                                 <img src="../images/beef-club.jpg" alt="photo">
                             </a>
@@ -404,6 +624,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../js/owl.carousel.min.js"></script>
 <script src="../js/nouislider.min.js"></script>
 
 <script src="../js/main.js"></script>
