@@ -63,8 +63,10 @@
     font-size: 14px;
     line-height: 30px;
   }
-  .select-wrap .select-grid ul {
+  .select-wrap .select-grid {
     max-height: 250px;
+  }
+  .select-wrap .select-grid ul {
     padding: 15px 0;
   }
   .select-wrap .select-grid ul li {
@@ -1062,8 +1064,6 @@
   }
   .select-wrap {
     margin-bottom: 10px;
-  }
-  .select-wrap .select-list {
     max-height: 200px;
   }
   .select-wrap .select-list li {
@@ -1077,8 +1077,8 @@
     padding: 10px 0;
   }
   .select-wrap .select-grid ul li {
-    width: calc(100% / 4 - 10px);
-    height: 70px;
+    width: calc(100% / 6 - 10px);
+    height: 60px;
     margin: 0 5px 10px;
   }
   .select-wrap .select-grid ul li.active::after {
@@ -2385,7 +2385,8 @@
     cursor: pointer;
   }
   .product-page #product-carousel .carousel-item img {
-    height: 400px;
+    max-height: 700px;
+    height: auto;
   }
   .product-page #product-carousel .carousel-control-prev,
   .product-page #product-carousel .carousel-control-next {
@@ -3012,6 +3013,17 @@
   .portfolio-single-page .show-all-photos:hover {
     opacity: 0.8;
   }
+  .select-wrap .select-grid ul li {
+    width: calc(10% - 6px);
+    height: 50px;
+    margin: 0 3px 6px;
+  }
+  .select-wrap .select-grid .current-modal {
+    left: 50%;
+    top: auto;
+    bottom: 100%;
+    transform: translateX(-50%);
+  }
 }
 @media (max-width: 580px) {
   body {
@@ -3204,19 +3216,21 @@
   .product-page {
     margin-bottom: 20px;
   }
-  .product-page #product-carousel .carousel-item img {
-    height: 300px;
-  }
   .product-page #product-carousel .product-discount {
     width: 50px;
     height: 25px;
     font-size: 16px;
   }
   .product-page .price-block .product-price {
-    display: block;
-    padding-right: 0;
-    margin-right: 0;
-    border-right: none;
+    font-size: 20px;
+    padding-right: 5px;
+    margin-right: 5px;
+  }
+  .product-page .price-block .wholesale-price .yellow-text {
+    font-size: 12px;
+  }
+  .product-page .price-block .wholesale-price .info-item {
+    font-size: 10px;
   }
   .product-page .dimensions .block-item {
     padding: 0 5px;
@@ -3640,6 +3654,14 @@
   .portfolio-single-page .show-all-photos {
     height: 30px;
     font-size: 14px;
+  }
+  .select-wrap .select-grid ul li {
+    width: calc(100% / 8 - 6px);
+  }
+}
+@media (max-width: 480px) {
+  .select-wrap .select-grid ul li {
+    width: calc(100% / 6 - 6px);
   }
 }
 /*# sourceMappingURL=responsive.css.map */

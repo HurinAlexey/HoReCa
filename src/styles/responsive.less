@@ -78,9 +78,9 @@
     }
 
     .select-grid {
+      max-height: 250px;
 
       ul {
-        max-height: 250px;
         padding: 15px 0;
 
         li {
@@ -1416,9 +1416,9 @@
 
   .select-wrap {
     margin-bottom: 10px;
+    max-height: 200px;
 
     .select-list {
-      max-height: 200px;
 
       li {
         height: 25px;
@@ -1435,8 +1435,8 @@
         padding: 10px 0;
 
         li {
-          width: calc(100% / 4 - 10px);
-          height: 70px;
+          width: calc(100% / 6 - 10px);
+          height: 60px;
           margin: 0 5px 10px;
 
           &.active::after {
@@ -3234,7 +3234,8 @@
         cursor: pointer;
 
         img {
-          height: 400px;
+          max-height: 700px;
+          height: auto;
         }
       }
 
@@ -4065,6 +4066,28 @@
       }
     }
   }
+
+  .select-wrap {
+
+    .select-grid {
+
+      ul {
+
+        li {
+          width: calc(10% - 6px);
+          height: 50px;
+          margin: 0 3px 6px;
+        }
+      }
+
+      .current-modal {
+        left: 50%;
+        top: auto;
+        bottom: 100%;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
 
 
@@ -4280,13 +4303,6 @@
 
     #product-carousel {
 
-      .carousel-item {
-
-        img {
-          height: 300px;
-        }
-      }
-
       .product-discount {
         width: 50px;
         height: 25px;
@@ -4297,10 +4313,19 @@
     .price-block {
 
       .product-price {
-        display: block;
-        padding-right: 0;
-        margin-right: 0;
-        border-right: none;
+        font-size: 20px;
+        padding-right: 5px;
+        margin-right: 5px;
+      }
+
+      .wholesale-price {
+        .yellow-text {
+          font-size: 12px;
+        }
+
+        .info-item {
+          font-size: 10px;
+        }
       }
     }
 
@@ -4930,6 +4955,34 @@
     .show-all-photos {
       height: 30px;
       font-size: 14px;
+    }
+  }
+
+  .select-wrap {
+
+    .select-grid {
+
+      ul {
+
+        li {
+          width: calc(100% / 8 - 6px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .select-wrap {
+
+    .select-grid {
+
+      ul {
+
+        li {
+          width: calc(100% / 6 - 6px);
+        }
+      }
     }
   }
 }
